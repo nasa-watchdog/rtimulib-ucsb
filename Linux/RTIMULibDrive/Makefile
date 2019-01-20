@@ -108,7 +108,7 @@ OBJECTS = objects/RTIMULibDrive.o \
     objects/RTPressureMS5611.o \
     objects/RTPressureMS5637.o 
 
-MAKE_TARGET	= RTIMULibDrive
+MAKE_TARGET	= testIMU
 DESTDIR		= Output/
 TARGET		= Output/$(MAKE_TARGET)
 

@@ -78,8 +78,10 @@ int main()
 
             //  display 10 times per second
 
-            if ((now - displayTimer) > 100000) {
-                printf("Sample rate %d: %s\r", sampleRate, RTMath::displayDegrees("", imuData.fusionPose));
+            if ((now - displayTimer) > 500000) {
+		printf(RTMath::displayRadians("Gyroscope", imuData.gyro));
+		printf(RTMath::displayRadians("Acclerometer", imuData.accel));
+		printf("\n");
                 fflush(stdout);
                 displayTimer = now;
             }
